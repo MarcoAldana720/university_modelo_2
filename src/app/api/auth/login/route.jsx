@@ -4,6 +4,8 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import { serialize } from "cookie";
 
+const JWT_SECRET = process.env.JWT_SECRET;
+
 export async function POST(request) {
   try {
     const data = await request.json();
@@ -55,7 +57,7 @@ export async function POST(request) {
           description: user.rol_descripcion // Incluye la descripción del rol
         }
       },
-      process.env.JWT_SECRET // Clave secreta para firmar el token desde la variable de entorno
+      JWT_SECRET // Clave secreta para firmar el token desde la variable de entorno
     );
 
     // Serializar el token en una cookie

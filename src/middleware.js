@@ -2,7 +2,8 @@ import { NextResponse } from "next/server";
 import { jwtVerify } from 'jose';
 
 // Obtengo el valor del secreto desde las variables de entorno
-const secret = new TextEncoder().encode(process.env.JWT_SECRET);
+const JWT_SECRET = process.env.JWT_SECRET;
+const secret = new TextEncoder().encode(JWT_SECRET);
 const publicRoutes = ['/']; // Defino las rutas públicas
 
 // Defino los roles requeridos para cada tipo de ruta

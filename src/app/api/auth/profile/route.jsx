@@ -23,7 +23,7 @@ export async function GET(request) {
     const username = decoded.username;
 
     const [userResult] = await conn.query(`
-      SELECT 
+      SELECT
         usuarios.us_nombres,
         usuarios.us_apellidos,
         usuarios.us_usuario,
