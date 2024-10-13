@@ -32,12 +32,12 @@ export default function Aside({ isOpen, onClose }) {
         </div>
 
         <nav className="mt-6 px-3">
-          <Link href="/main/dashboard" className="flex px-3 rounded-md items-center gap-2 py-3 transition duration-300 hover:bg-white hover:text-primary group/link" onClick={onClose}>
+          <Link href="/admin/dashboard" className="flex px-3 rounded-md items-center gap-2 py-3 transition duration-300 hover:bg-white hover:text-primary group/link" onClick={onClose}>
             <HomeIcon width={20} className="fill-white group-hover/link:fill-primary inline-block" />
             Panel De Control
           </Link>
 
-          <Link href="/main/usuarios" className="flex px-3 rounded-md items-center gap-2 py-3 transition duration-300 hover:bg-white hover:text-primary group/link" onClick={onClose}>
+          <Link href="/admin/usuarios" className="flex px-3 rounded-md items-center gap-2 py-3 transition duration-300 hover:bg-white hover:text-primary group/link" onClick={onClose}>
             <UserIcon width={20} className="fill-white group-hover/link:fill-primary inline-block" />
             Usuarios
           </Link>

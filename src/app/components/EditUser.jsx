@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import Modal from "./Modal";
 import { useEffect, useState } from "react";
@@ -56,7 +56,7 @@ export default function EditUser({ show }) {
 
       toast.success(res.data.message || 'Usuario Actualizado Exitosamente.');
       router.refresh();
-      router.push('/main/usuarios');
+      router.push('/admin/usuarios');
     } catch (error) {
       toast.error(error.message || 'Error Al Actualizar El usuario.');
     }

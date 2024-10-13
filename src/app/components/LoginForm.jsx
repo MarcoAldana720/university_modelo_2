@@ -29,9 +29,9 @@ export default function LoginForm() {
       if (response.status === 200) {
         const { role } = response.data;
         if (role.id === 1) {
-          router.push("/main/dashboard");
+          router.push("/admin/dashboard");
         } else if (role.id === 2) {
-          router.push("/usuario");
+          router.push("/client");
         }
       }
     } catch (error) {

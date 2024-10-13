@@ -85,7 +85,7 @@ export default function ListUsers() {
           <SearchIcon className="search_icon" />
         </div>
 
-        <Link href="/main/usuarios?new=1">
+        <Link href="/admin/usuarios?new=1">
           <div className="container_btn">
             <AddUserIcon width={18} />
             <span>Agregar</span>

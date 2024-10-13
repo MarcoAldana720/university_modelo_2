@@ -6,7 +6,7 @@ export default function Fila({usuarios}) {
   const router = useRouter();
 
   function redireccion(id) {
-    router.push("/main/usuarios/" + id);
+    router.push("/admin/usuarios/" + id);
     router.refresh();
   }
 

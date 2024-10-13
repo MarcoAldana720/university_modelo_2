@@ -18,7 +18,7 @@ export default function NewUser({show}) {
     try {
       const res = await axios.post('/api/admin', dataObject);
       toast.success(res.data.message || 'Usuario Registrado Exitosamente');
-      router.push("/main/usuarios");
+      router.push("/admin/usuarios");
     } catch (error) {
       toast.error(error.response?.data.message || 'Error Al Registrar Usuario');
     }

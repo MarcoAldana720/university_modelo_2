@@ -1,9 +1,10 @@
-'use client';
+"use client"
 
 import { useEffect, useState } from 'react';
 import jsPDF from 'jspdf';
 import 'jspdf-autotable';
 import axios from 'axios';
+import { toast } from 'sonner';
 
 export default function ExportInfo({ userId }) {
     const [userData, setUserData] = useState(null);
@@ -51,11 +52,11 @@ export default function ExportInfo({ userId }) {
         });
 
         doc.save('reporte.pdf');
+
+        toast.success('Se Exporto Correctamente');
     };
 
     return (
-        <button onClick={generatePDF} className="btn_export">
-            Exportar PDF
-        </button>
+        <button onClick={generatePDF} className="btn_export">Exportar PDF</button>
     );
 }

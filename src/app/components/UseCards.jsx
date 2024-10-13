@@ -34,7 +34,7 @@ export default function UserCard() {
         <div className="container_clients">
             <h1 className="title">panel de control</h1><br />
             <div className="container_cards">
-                <Link href="/main/usuarios">
+                <Link href="/admin/usuarios">
                     <div className="cards">
                         <div className="container_count">
                             <p className="count">{sizeData}</p>

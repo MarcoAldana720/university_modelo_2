@@ -8,8 +8,8 @@ const publicRoutes = ['/']; // Defino las rutas públicas
 
 // Defino los roles requeridos para cada tipo de ruta
 const roleRequired = {
-  '/main': 1,       // Administradores
-  '/usuario': 2     // Usuarios
+  '/admin': 1,       // Administrador
+  '/client': 2     // Profesor
 };
 
 export async function middleware(req) {
@@ -50,5 +50,5 @@ export async function middleware(req) {
 }
 
 export const config = {
-  matcher: ['/main/:path*', '/usuario/:path*'],
+  matcher: ['/admin/:path*', '/client/:path*'],
 };

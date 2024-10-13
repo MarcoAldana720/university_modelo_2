@@ -43,7 +43,7 @@ export default function InfoUser({ userId, searchParams }) {
     return (
         <div className="custom_container">
         <EditUser show={Boolean(searchParams.edit)} />
-        <Link href="/main/usuarios">&lt; regresar</Link><br /><br />
+        <Link href="/admin/usuarios">&lt; regresar</Link><br /><br />
 
         <div className="profile_card">
             <div className="profile_initials">{initials}</div>

@@ -10,9 +10,9 @@ function Search({ onSearch }) {
   useEffect(() => {
     onSearch(searchTerm);
     if (!searchTerm) {
-      router.push("/main/usuarios");
+      router.push("/admin/usuarios");
     } else {
-      router.push(`/main/usuarios?search=${encodeURIComponent(searchTerm)}`);
+      router.push(`/admin/usuarios?search=${encodeURIComponent(searchTerm)}`);
     }
   }, [searchTerm]);
 
