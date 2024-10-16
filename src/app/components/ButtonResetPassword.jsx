@@ -13,7 +13,7 @@ const ButtonResetPassword = ({ us_id }) => {
 
     try {
       await axios.put(`/api/admin/${us_id}/reset-password`);
-      toast.success("Contraseña Restaurada Con Éxito");
+      toast.success("La Contraseña Fue Restaurada Con Éxito");
     } catch (error) {
       toast.error("Error Al Restaurar La Contraseña");
     } finally {

@@ -100,10 +100,10 @@ export async function PUT(request) {
         role: {
           id: decoded.role.id,
           description: decoded.role.description
-        }
+        },
+          exp: Math.floor(Date.now() / 1000) + (60 * 60)
       },
       JWT_SECRET,
-      { expiresIn: '1h' }
     );
 
     const response = NextResponse.json({ message: 'User updated successfully' });

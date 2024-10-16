@@ -1,10 +1,9 @@
-"use client";
+"use client"
 
 import Link from 'next/link';
 import HomeIcon from '../assets/HomeIcon';
 import UserIcon from '../assets/UserIcon';
 import CloseIcon from '../assets/CloseIcon';
-import './aside.css';
 
 export default function Aside({ isOpen, onClose }) {
   return (

@@ -53,7 +53,7 @@ export default function ExportInfo({ userId }) {
 
         doc.save('reporte.pdf');
 
-        toast.success('Se Exporto Correctamente');
+        // toast.success('Se Exporto Correctamente');
     };
 
     return (

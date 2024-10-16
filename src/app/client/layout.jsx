@@ -1,8 +1,8 @@
 "use client"
 
 import { useEffect, useState } from 'react';
-import Aside from '../components/Aside';
-import Profile from '../components/Profile';
+import Aside from '../components/client/Aside';
+import Profile from '../components/client/Profile';
 import MenuIcon from '../assets/MenuIcon';
 import PowerIcon from '../assets/PowerIcon';
 import axios from 'axios';
