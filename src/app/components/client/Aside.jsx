@@ -9,7 +9,7 @@ import BookIcon from '../../assets/BookIcon';
 import FolderIcon from '../../assets/FolderIcon';
 import CloseIcon from '../../assets/CloseIcon';
 import DocumentIcon from '../../assets/DocumentIcon';
-import LinkAside from '../../components/client/LinkAside';
+import LinkAside from './LinkAside';
 import { useState } from 'react';
 import './aside.css';
 

@@ -31,7 +31,7 @@ export default function LoginForm() {
         if (role.id === 1) {
           router.push("/admin/dashboard");
         } else if (role.id === 2) {
-          router.push("/client");
+          router.push("/client/identify");
         }
       }
     } catch (error) {

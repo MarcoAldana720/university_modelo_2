@@ -9,7 +9,7 @@ const publicRoutes = ['/']; // Defino las rutas públicas
 // Defino los roles requeridos para cada tipo de ruta
 const roleRequired = {
   '/admin': 1,       // Administrador
-  '/client': 2     // Profesor
+  '/client': 2       // Profesor
 };
 
 export async function middleware(req) {
